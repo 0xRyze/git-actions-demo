@@ -29,9 +29,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/0xryze/github-actions-demo.git"
+    "url": "https://github.com/0xryze/git-actions-demo.git"
   },
-  "homepage": "https://github.com/0xryze/github-actions-demo",
+  "homepage": "https://github.com/0xryze/git-actions-demo",
   "license": "Apache-2.0",
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
