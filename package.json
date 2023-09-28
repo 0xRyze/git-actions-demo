@@ -1,0 +1,52 @@
+{
+  "name": "astro-keyboard-controls",
+  "version": "1.0.0",
+  "description": "An Astro plugin that binds keyboard keys for actions like focus on search box and others",
+  "main": "index.astro",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "changeset version",
+    "release": "changeset publish",
+    "prepare": "husky install"
+  },
+  "type": "module",
+  "exports": "./index.astro",
+  "peerDependencies": {
+    "astro": "^1.5.0"
+  },
+  "keywords": [
+    "astro",
+    "astrojs",
+    "astro-component",
+    "astro-plugin",
+    "astro-keyboard-controls",
+    "accessibility"
+  ],
+  "author": {
+    "name": "Liran Tal",
+    "email": "liran.tal@gmail.com",
+    "url": "https://github.com/lirantal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lirantal/astro-keyboard-controls.git"
+  },
+  "homepage": "https://github.com/lirantal/astro-keyboard-controls",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
