@@ -7,7 +7,7 @@
 
 An Astro component that allows you to easily bind to specific keyboard keys and focus on a specific element based on a passed selector string.
 
-## Installation
+## Installationn
 
 ```bash
 npm install astro-keyboard-controls
