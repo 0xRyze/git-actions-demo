@@ -1,6 +1,6 @@
 {
   "name": "github-actions-demo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Astro plugin that binds keyboard keys for actions like focus on search box and others",
   "main": "index.astro",
   "scripts": {
