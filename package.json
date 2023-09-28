@@ -1,6 +1,6 @@
 {
   "name": "@banditbadgod/git-actions-demo",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": false,
   "description": "An Astro plugin that binds keyboard keys for actions like focus on search box and others",
   "main": "index.astro",

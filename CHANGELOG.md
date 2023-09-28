@@ -1,5 +1,11 @@
 # github-actions-demo
 
+## 0.2.0
+
+### Minor Changes
+
+- [#2](https://github.com/0xRyze/git-actions-demo/pull/2) [`b01f59d`](https://github.com/0xRyze/git-actions-demo/commit/b01f59dba359e5aa8ea19a0f9faed06666b60e41) Thanks [@0xRyze](https://github.com/0xRyze)! - release update readme
+
 ## 0.1.1
 
 ### Patch Changes
