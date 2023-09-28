@@ -1,10 +1,10 @@
 {
-  "name": "astro-keyboard-controls",
-  "version": "1.0.0",
+  "name": "github-actions-demo",
+  "version": "0.1.0",
   "description": "An Astro plugin that binds keyboard keys for actions like focus on search box and others",
   "main": "index.astro",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "changeset": "changeset",
     "version": "changeset version",
     "release": "changeset publish",
     "prepare": "husky install"
@@ -29,9 +29,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lirantal/astro-keyboard-controls.git"
+    "url": "https://github.com/0xryze/github-actions-demo.git"
   },
-  "homepage": "https://github.com/lirantal/astro-keyboard-controls",
+  "homepage": "https://github.com/0xryze/github-actions-demo",
   "license": "Apache-2.0",
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",

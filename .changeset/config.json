@@ -3,7 +3,7 @@
   "changelog": [
     "@changesets/changelog-github",
       {
-        "repo": "lirantal/astro-keyboard-controls"
+        "repo": "0xryze/github-actions-demo"
       }
   ],
   "commit": false,
