@@ -13,7 +13,7 @@ An Astro component that allows you to easily bind to specific keyboard keys and 
 npm install astro-keyboard-controls
 ```
 
-## Examplee
+## Exampleee
 
 ```astro
 ---
