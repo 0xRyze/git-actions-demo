@@ -6,7 +6,7 @@
   "main": "index.astro",
   "scripts": {
     "changeset": "changeset",
-    "version": "changeset version",
+    "version": "changeset version && changeset tag",
     "release": "changeset publish",
     "prepare": "husky install"
   },
