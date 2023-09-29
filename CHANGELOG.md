@@ -1,5 +1,15 @@
 # github-actions-demo
 
+## 0.3.0
+
+### Minor Changes
+
+- [#8](https://github.com/0xRyze/git-actions-demo/pull/8) [`5301900`](https://github.com/0xRyze/git-actions-demo/commit/53019000659c5f767ac92a8cb25624798c6a2b08) Thanks [@0xRyze](https://github.com/0xRyze)! - this is a minor
+
+### Patch Changes
+
+- [#8](https://github.com/0xRyze/git-actions-demo/pull/8) [`5b5a638`](https://github.com/0xRyze/git-actions-demo/commit/5b5a6387282051d3e3d0d7db9b27b8c3c50b3499) Thanks [@0xRyze](https://github.com/0xRyze)! - this is a patch
+
 ## 0.2.0
 
 ### Minor Changes
