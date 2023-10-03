@@ -1,0 +1,14 @@
+export const SAGE_WHITELIST_TOKEN = '4bsd9YhxinhB4vL5HzzJKxwiybNxaXey7u3Fs9QNg5nV'
+
+export const ADAM_APE_UPDATE_AUTHORITY = '9AVW984UWLEZzvJQ9jYy8jLQ9eU9vyrtk8xcNUQSE5Mr'
+
+export const ADAM_APE_FIRST_VERIFIED_CREATOR = 'B5te1nbK9FVtRKH76x7SL8ei7d3mi3n5rNotYZ9H8e1Z'
+
+export const SAGE_CANDY_MACHINE_ID = '2sA4ewhXRFhj5ixYLuMcj9552tKybEyH7pJA8PmLec3H'
+
+export const SAGE_ADMIN_PROD = 'sgmk4x2AUePUUCwwpzTRsCZnHWUeBMqurtGRc9oCBwg'
+
+export const SAGE_ADMIN_DEV = 'sgder8eSDHMbDPyYRXoDv3x6suJsYpHRBV8BhkTKLT9'
+
+// export const BAT_TOKEN = "EPeUFDgHRxs9xxEPVaL6kfGQvCon7jmAWKVUHuux1Tpz"
+export const BAT_TOKEN = 'CChiQqju9LH52bNpVoDWLwSMhLcDoVbEZgYKLHxgSTS3'

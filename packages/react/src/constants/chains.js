@@ -1,0 +1,282 @@
+/**
+ * List of all the networks supported
+ */
+export const SupportedChainId = {
+  MAINNET: 1,
+  GOERLI: 5,
+  SHARDEUM20: 8081,
+  SHARDEUM_SPHINX: 8082,
+  BINANCE: 56,
+  BINANCE_TESTNET: 97,
+  SOLANA: 9090,
+  SOLANA_DEVNET: 9091,
+  POLYGON_MAINNET: 137,
+  POLYGON_MUMBAI: 80001,
+  STACKS_TESTNET: 6061,
+  STACKS_MAINNET: 6060,
+  BASE_MAINNET: 8453,
+  BASE_TESTNET: 84531,
+  CORE_MAINNET: 1116,
+  CORE_TESTNET: 1115,
+  TELOS_MAINNET: 40,
+  TELOS_TESTNET: 41,
+  OPTIMISM_MAINNET: 10,
+  OPTIMISM_GOERLI: 420,
+  ARBITRUM: 42161,
+  ARBITRUM_GOERLI: 421613,
+  AVALANCHE: 43114,
+  AVALANCHE_TESTNET: 43113,
+  ZORA_MAINNET: 7777777,
+  ZORA_GOERLI: 999,
+}
+
+export const CHAIN_IDS_TO_NAMES = {
+  [SupportedChainId.MAINNET]: 'mainnet',
+  [SupportedChainId.GOERLI]: 'goerli',
+  [SupportedChainId.BINANCE]: 'binance smart chain',
+  [SupportedChainId.BINANCE_TESTNET]: 'binance smart chain - testnet',
+  [SupportedChainId.SHARDEUM20]: 'Shardeum Liberty 2.0',
+  [SupportedChainId.SHARDEUM_SPHINX]: 'Shardeum Sphinx',
+  [SupportedChainId.BASE_MAINNET]: 'base mainnet',
+  [SupportedChainId.BASE_TESTNET]: 'base goerli',
+  [SupportedChainId.CORE_MAINNET]: 'core mainnet',
+  [SupportedChainId.CORE_TESTNET]: 'core testnet',
+  [SupportedChainId.TELOS_MAINNET]: 'telos mainnet',
+  [SupportedChainId.TELOS_TESTNET]: 'telos testnet',
+  [SupportedChainId.OPTIMISM_MAINNET]: 'optimism mainnet',
+  [SupportedChainId.OPTIMISM_GOERLI]: 'optimism goerli',
+  [SupportedChainId.ARBITRUM]: 'arbitrum',
+  [SupportedChainId.ARBITRUM_GOERLI]: 'arbitrum goerli',
+  [SupportedChainId.AVALANCHE]: 'avalanche',
+  [SupportedChainId.AVALANCHE_TESTNET]: 'avalanche testnet',
+  [SupportedChainId.ZORA_MAINNET]: 'zora mainnet',
+  [SupportedChainId.ZORA_GOERLI]: 'zora goerli',
+}
+
+export const CHAIN_IDS_TO_NAMES_HYPHEN = {
+  [SupportedChainId.MAINNET]: 'eth',
+  [SupportedChainId.GOERLI]: 'goerli',
+  [SupportedChainId.BINANCE]: 'bsc',
+  [SupportedChainId.BINANCE_TESTNET]: 'bsc-testnet',
+  [SupportedChainId.SOLANA]: 'solana',
+  [SupportedChainId.SOLANA_DEVNET]: 'solana-devnet',
+  [SupportedChainId.SHARDEUM20]: 'Shardeum-Liberty-2.0',
+  [SupportedChainId.POLYGON_MAINNET]: 'polygon-mainnet',
+  [SupportedChainId.POLYGON_MUMBAI]: 'polygon-mumbai',
+  [SupportedChainId.BASE_MAINNET]: 'base-mainnet',
+  [SupportedChainId.BASE_TESTNET]: 'base-goerli',
+  [SupportedChainId.CORE_MAINNET]: 'core',
+  [SupportedChainId.CORE_TESTNET]: 'core-testnet',
+  [SupportedChainId.TELOS_MAINNET]: 'telos-mainnet',
+  [SupportedChainId.TELOS_TESTNET]: 'telos-testnet',
+  [SupportedChainId.OPTIMISM_MAINNET]: 'optimism-mainnet',
+  [SupportedChainId.OPTIMISM_GOERLI]: 'optimism-goerli',
+  [SupportedChainId.ARBITRUM]: 'arbitrum',
+  [SupportedChainId.ARBITRUM_GOERLI]: 'arbitrum-goerli',
+  [SupportedChainId.AVALANCHE]: 'avalanche',
+  [SupportedChainId.AVALANCHE_TESTNET]: 'avalanche-testnet',
+  [SupportedChainId.ZORA_MAINNET]: 'zora-mainnet',
+  [SupportedChainId.ZORA_GOERLI]: 'zora-goerli',
+}
+
+export const BLOCK_EXPLORER = {
+  [SupportedChainId.MAINNET]: 'https://etherscan.io/',
+  [SupportedChainId.GOERLI]: 'https://goerli.etherscan.io/',
+  [SupportedChainId.BINANCE]: 'https://bscscan.com/',
+  [SupportedChainId.BINANCE_TESTNET]: 'https://testnet.bscscan.com/',
+  [SupportedChainId.SOLANA]: 'https://solscan.io/',
+  [SupportedChainId.SOLANA_DEVNET]: 'https://solscan.io/',
+  [SupportedChainId.SHARDEUM20]: 'https://explorer-dapps.shardeum.org/',
+  [SupportedChainId.SHARDEUM_SPHINX]: 'https://explorer-sphinx.shardeum.org/',
+  [SupportedChainId.POLYGON_MAINNET]: 'https://polygonscan.com/',
+  [SupportedChainId.POLYGON_MUMBAI]: 'https://mumbai.polygonscan.com/',
+  [SupportedChainId.STACKS_TESTNET]: 'https://explorer.stacks.co/',
+  [SupportedChainId.STACKS_MAINNET]: 'https://explorer.stacks.co/',
+  [SupportedChainId.BASE_MAINNET]: 'https://basescan.org',
+  [SupportedChainId.BASE_TESTNET]: 'https://goerli.basescan.org',
+  [SupportedChainId.CORE_MAINNET]: 'https://scan.coredao.org/',
+  [SupportedChainId.CORE_TESTNET]: 'https://scan.test.btcs.network/',
+  [SupportedChainId.TELOS_MAINNET]: 'https://teloscan.io/',
+  [SupportedChainId.TELOS_TESTNET]: 'https://testnet.teloscan.io/',
+  [SupportedChainId.OPTIMISM_MAINNET]: 'https://optimistic.etherscan.io/',
+  [SupportedChainId.OPTIMISM_GOERLI]: 'https://optimism-goerli.blockscout.com/',
+  [SupportedChainId.ARBITRUM]: 'https://arbiscan.io/',
+  [SupportedChainId.ARBITRUM_GOERLI]: 'https://goerli-rollup-explorer.arbitrum.io/',
+  [SupportedChainId.AVALANCHE]: 'https://snowtrace.io/',
+  [SupportedChainId.AVALANCHE_TESTNET]: 'https://testnet.snowtrace.io/',
+  [SupportedChainId.ZORA_MAINNET]: 'https://explorer.zora.energy/',
+  [SupportedChainId.ZORA_GOERLI]: 'https://testnet.explorer.zora.energy/',
+}
+
+export const CHAIN_INFO = {
+  [SupportedChainId.MAINNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.MAINNET],
+    label: 'Ethereum',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+  },
+  [SupportedChainId.GOERLI]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.GOERLI],
+    label: 'Goerli',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'Goerli Ether', symbol: 'gETH', decimals: 18 },
+  },
+  [SupportedChainId.BINANCE]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.BINANCE],
+    label: 'BNB Smart Chain',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'BNB', symbol: 'BNB', decimals: 18 },
+  },
+  [SupportedChainId.BINANCE_TESTNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.BINANCE_TESTNET],
+    label: 'BNB Smart Chain Testnet',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'BNB', symbol: 'BNB', decimals: 18 },
+  },
+  [SupportedChainId.SHARDEUM20]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.SHARDEUM20],
+    label: 'Shardeum Sphinx DApp',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'SHM', symbol: 'SHM', decimals: 18 },
+  },
+  [SupportedChainId.SHARDEUM_SPHINX]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.SHARDEUM_SPHINX],
+    label: 'Shardeum Sphinx',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'SHM', symbol: 'SHM', decimals: 18 },
+  },
+  [SupportedChainId.POLYGON_MUMBAI]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.POLYGON_MUMBAI],
+    label: 'Mumbai',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'MATIC', symbol: 'MATIC', decimals: 18 },
+  },
+  [SupportedChainId.POLYGON_MAINNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.POLYGON_MAINNET],
+    label: 'Polygon',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'MATIC', symbol: 'MATIC', decimals: 18 },
+  },
+  [SupportedChainId.SOLANA_DEVNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.SOLANA_DEVNET],
+    label: 'Solana Devnet',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'SOL', symbol: 'SOL', decimals: 9 },
+  },
+  [SupportedChainId.SOLANA]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.SOLANA],
+    label: 'Solana',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'SOL', symbol: 'SOL', decimals: 9 },
+  },
+  [SupportedChainId.BASE_MAINNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.BASE_MAINNET],
+    label: 'Base',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+  },
+  [SupportedChainId.BASE_TESTNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.BASE_TESTNET],
+    label: 'Base Testnet',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+  },
+  [SupportedChainId.CORE_MAINNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.CORE_MAINNET],
+    label: 'Core',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'CORE', symbol: 'CORE', decimals: 18 },
+  },
+  [SupportedChainId.CORE_TESTNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.CORE_TESTNET],
+    label: 'Core Testnet',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'CORE', symbol: 'CORE', decimals: 18 },
+  },
+  [SupportedChainId.STACKS_MAINNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.STACKS_MAINNET],
+    label: 'Stacks',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'STACKS', symbol: 'STACKS', decimals: 18 },
+  },
+  [SupportedChainId.STACKS_TESTNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.STACKS_MAINNET],
+    label: 'Stacks Testnet',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'STACKS', symbol: 'STACKS', decimals: 18 },
+  },
+  [SupportedChainId.TELOS_MAINNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.TELOS_MAINNET],
+    label: 'Telos',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'TLOS', symbol: 'TLOS', decimals: 18 },
+  },
+  [SupportedChainId.TELOS_TESTNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.TELOS_TESTNET],
+    label: 'Telos Testnet',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'TLOS', symbol: 'TLOS', decimals: 18 },
+  },
+  [SupportedChainId.OPTIMISM_MAINNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.OPTIMISM_MAINNET],
+    label: 'Optimism',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+  },
+  [SupportedChainId.OPTIMISM_GOERLI]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.OPTIMISM_GOERLI],
+    label: 'Optimism Goerli',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+  },
+  [SupportedChainId.ARBITRUM]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.ARBITRUM],
+    label: 'Arbitrum',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+  },
+  [SupportedChainId.ARBITRUM_GOERLI]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.ARBITRUM_GOERLI],
+    label: 'Arbitrum Goerli',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'AGOR', symbol: 'AGOR', decimals: 18 },
+  },
+  [SupportedChainId.AVALANCHE]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.AVALANCHE],
+    label: 'Avalanche',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'AVAX', symbol: 'AVAX', decimals: 18 },
+  },
+  [SupportedChainId.AVALANCHE_TESTNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.AVALANCHE_TESTNET],
+    label: 'Avalanche Testnet',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'AVAX', symbol: 'AVAX', decimals: 18 },
+  },
+  [SupportedChainId.ZORA_MAINNET]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.ZORA_MAINNET],
+    label: 'Zora',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+  },
+  [SupportedChainId.ZORA_GOERLI]: {
+    explorer: BLOCK_EXPLORER[SupportedChainId.ZORA_GOERLI],
+    label: 'Zora Testnet',
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
+  },
+}
+
+/**
+ * Array of all the supported chain IDs
+ */
+export const ALL_SUPPORTED_CHAIN_IDS = Object.values(SupportedChainId).filter((id) => typeof id === 'number')
+
+export const TEST_NET_CHAIN_IDS = [
+  1, 5, 56, 4, 97, 8081, 8082, 137, 80001, 8453, 84531, 1116, 1115, 40, 41, 10, 420, 42161, 421613, 43114, 43113,
+  7777777, 999,
+]
+
+export const SupportedEvmChains = TEST_NET_CHAIN_IDS
+
+export const MAIN_NET_CHAIN_IDS = [1, 56, 8082, 8453, 1116]
