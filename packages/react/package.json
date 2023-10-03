@@ -1,6 +1,6 @@
 {
   "name": "@banditbadgod/git-actions-demo",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "type": "module",
   "main": "dist/index.js",
@@ -97,5 +97,8 @@
     "tweetnacl-util": "^0.15.1",
     "ua-parser-js": "^1.0.34",
     "yup": "^1.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -22,17 +22,23 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18.x
+
       - name: install dependencies
         run: pnpm install --frozen-lockfile
+
       - name: Prepare husky
         run: pnpm run prepare
+
+      - name: Build
+        run: pnpm build
+
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
         with:
-          publish: pnpm run release
-          version: pnpm run version
-          commit: "chore: new release"
-          title: "chore: new release candidate"
+          publish: pnpm run changeset:release
+          version: pnpm run changeset:version
+          commit: "docs: add changelog"
+          title: "docs: add changelog"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
