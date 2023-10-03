@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/*.js",
+    "src/**/*.json"
+  ],
+  "exclude": ["node_modules", "src/widgets/Launchpad", "src/state/launchpad", "src/widget.jsx"]
+}
