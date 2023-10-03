@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "composite": true,
+    "target": "es6",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["es5", "dom", "es2015.promise"],
+    "types": ["vite/client"],
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  }
+}
