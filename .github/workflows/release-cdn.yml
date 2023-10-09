@@ -1,0 +1,42 @@
+name: release
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+permissions: {}
+jobs:
+  release-cdn:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Prepare husky
+        run: pnpm run prepare
+
+      - name: Build
+        run: pnpm build
+
+      - name: Go inside CDN package
+        uses: cd packages/cdn
+
+      - name: Setup AWS CLI
+          uses: aws-actions/configure-aws-credentials@v1
+          with:
+            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            aws-region: us-east-1
+
+      - name: Sync files to S3 bucket
+          run: |
+            aws s3 sync sdk s3://demo-sdk.bandit.network --delete
