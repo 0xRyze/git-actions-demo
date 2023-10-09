@@ -10,33 +10,21 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 permissions: {}
 jobs:
   release-cdn:
+    name: Upload to Amazon S3
     runs-on: ubuntu-latest
+    # These permissions are needed to interact with GitHub's OIDC Token endpoint.
+    permissions:
+      id-token: write
+      contents: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-
-      - name: install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Prepare husky
-        run: pnpm run prepare
-
-      - name: Build
-        run: pnpm build
-
-      - name: Go inside CDN package
-        uses: cd packages/cdn
-
-      - name: Setup AWS CLI
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Configure AWS credentials from Test account
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
-
-      - name: Sync files to S3 bucket
+      - name: Copy files to the test website with the AWS CLI
         run: |
-          aws s3 sync sdk s3://demo-sdk.bandit.network --delete
+          aws s3 sync packages/cdn s3://demo-sdk.bandit.network
