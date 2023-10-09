@@ -14,9 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     # These permissions are needed to interact with GitHub's OIDC Token endpoint.
     permissions:
-      contents: write
-      issues: write
-      pull-requests: write
+      id-token: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
@@ -25,7 +24,7 @@ jobs:
           node-version: 18.x
 
       - name: install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Prepare husky
         run: pnpm run prepare
