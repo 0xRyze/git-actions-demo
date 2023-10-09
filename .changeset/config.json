@@ -3,7 +3,7 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "bandit-network/bandit-widgets"
+      "repo": "0xryze/git-actions-demo"
     }
   ],
   "commit": false,
